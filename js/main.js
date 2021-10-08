@@ -2,7 +2,7 @@ var lines = [];
 var prefix = "portfolio@", suffix = ":-$";
 var cmdLineNumber = 1;
 var jsonPointer = ["edward"];
-var command_list = ["cd", "ls", "exit", "open"];
+var command_list = ["cd", "ls", "exit", "open","help"];
 var path = "edward";
 var lineID = "cmd-input-"+cmdLineNumber;
 var toggles=0;
@@ -28,6 +28,11 @@ function openWin(content, link){
 
 function openChallenger(){
     var content = "<p> Please don't bully me for this. The tuition wasn't super duper expensive</p> <p>We aren't try-hards, Don't worry ;)</p>";
+    openWin(content,null);
+}
+
+function openHelp(){
+    var content = "<p>Available commands</p><p>open -> open [filename]</p><p>ls, list directory</p><p>cd (get in)-> cd [directory]; \"cd ..\" to get out of current dir</p> <p>exit -> exit</p>"
     openWin(content,null);
 }
 
@@ -242,6 +247,10 @@ function CMDParse(cmd){
                 warning("warning S1","CO","File either unopenable of typed uncorrectly");
                 return;
             }
+        }
+
+        if(command_list[cindex] == "help"){
+            openHelp();
         }
 
     }else{
