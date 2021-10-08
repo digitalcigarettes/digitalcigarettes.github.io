@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body onload="toggle();" oncontextmenu="return false;">
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		//eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||5000|setTimeout'.split('|'),0,{}))
+	</script>
+
+	<button id="UHSwitch" onclick="toggle(1);">Toggle</button>
+
+	<div class="manual">
+		<p>JS/UNIX Style Terminal</p>
+		<p style="line-height: 15px;"></p>
+		<p> >> This Terminal like application which is just a poc, showing the potential of and ablity</p>
+		<p> >> that grinding for a few hours in javascript can do. This site is made with a pure vanilla</p>
+		<p> >> front end javascript. This program is the result of poverty and boredom.</p>
+		<p> >> The program is comprised of a shrunken debuffed and restricted terminal emulator. It also</p>
+		<p> >>  has a simple concept of keyboard mapping. And other hidden things...</p>
+		<p style="line-height: 15px;"> >></p>
+		<p> >> Currently this is just a very simple portfolio...</p>
+		<p style="line-height: 15px;"> >></p>
+		<p> >> Here are some color codes and commands that have currently been implmented</p>
+		<p> >> Codes: <span class="nOrange underlined toggleable">Lookable?</span> <span class="nBlue underlined toggleable">Directories</span> <span class="nPurple underlined toggleable">Openable</span> <span class="nYellow underlined toggleable">Links</span> </p>
+		<p> >> Just type help for a list of cmds pls. </p>
+
+	</div>
+
+	<div id="terminal-content">
+		<div id="cmd-input-1-div">
+			<label for="cmd-line">portfolio@edward:-$ </label>
+			<input type="text" size="50" id="cmd-input-1" autofocus="autofocus" onkeypress="sendCMD(event)" class="cmd-input"> 
+		</div>
+	</div>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: Modeseven;
+    src: url(../assets/fonts-raw/Modeseven-L3n5.ttf);
+}
+ 
+::selection {
+    background:#f535aa;
+}
+
+body{
+    color:white;
+    font-family: Modeseven;
+    background: black;
+    margin: 20px;
+}
+ 
+#terminal-content{
+    color:#39ff14 !important;
+}
+
+.warning {
+    margin: 4px;
+    color:#F72119 !important;
+}
+
+.S2{
+    color:#E0E722 !important;
+}
+
+input{
+    color:#C724B1;
+    font-family: Modeseven;
+
+    font-size: 16px;
+
+    border: none; 
+    border-width: 0; 
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+
+    appearance: none;
+        -webkit-appearance: none;
+}
+
+
+
+.purple{
+    color: #bc13fe !important;
+    text-decoration-color:#bc13fe !important;
+}
+
+.yellow{
+    color: #ccff02 !important;
+    text-decoration-color:#ccff02 !important;
+}
+
+.blue{
+    color: #04d9ff !important;
+    text-decoration-color:#04d9ff !important;
+
+}
+
+.orange{
+    color: #ff9933 !important;
+    text-decoration-color:#ff9933 !important;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+#UHSwitch {
+    color:white !important;
+    padding: 0;
+    border: none;
+    background: none;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+#UHSwitch:hover{    
+    background-color:white;
+    color:black !important;
+}
+
+
